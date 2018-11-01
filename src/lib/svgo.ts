@@ -78,7 +78,7 @@ const pluginsData = {
   moveGroupAttrsToElems,
   moveInheritableAttrsToElems,
   collapseGroups,
-  convertPathData,
+  // convertPathData,
   convertTransform,
   removeEmptyAttrs,
   removeEmptyContainers,
@@ -114,7 +114,7 @@ convertTransform.params.transformPrecision = floatPrecision;
 inlineStyles.params.onlyMatchedOnce = false;
 removeUselessStrokeAndFill.params.removeNone = true;
 
-const optimizedPluginsData = (function() {
+const optimizedPluginsData = (function () {
   return Object.values(pluginsData)
     .map(item => [item])
     .reduce((arr, item) => {
